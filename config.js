@@ -1,21 +1,7 @@
-const config = {
-    sitio: {
-        nombre: process.env.SITIO_NOMBRE || "Ferretería Don Juan",
-        telefono: process.env.SITIO_TELEFONO || "8888-8888",
-        direccion: process.env.SITIO_DIRECCION || "100 m norte de la plaza central, Siquirres",
-        email: process.env.SITIO_EMAIL || "info@ferreteriadonjuan.com"
-    },
-    redes: {
-        facebook: process.env.FACEBOOK_URL || "https://facebook.com/ferreteriadonjuan",
-        instagram: process.env.INSTAGRAM_URL || "https://instagram.com/ferreteriadonjuan",
-        whatsapp: process.env.WHATSAPP_URL || "https://wa.me/50688888888"
-    }
-};
+require('dotenv').config();
 
-console.log("📋 Configuración del proyecto:");
-console.log(`📌 Nombre: ${config.sitio.nombre}`);
-console.log(`📍 Dirección: ${config.sitio.direccion}`);
-console.log(`📞 Teléfono: ${config.sitio.telefono}`);
-console.log(`📧 Email: ${config.sitio.email}`);
-console.log("🔗 Redes sociales:", config.redes);
 
+console.log("Configuración cargada:");
+console.log("PORT:", process.env.PORT);
+console.log("DB_URI:", process.env.DB_URI);
+console.log("API_KEY:", process.env.API_KEY);
