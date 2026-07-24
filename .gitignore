@@ -3,5 +3,7 @@
 .DS_Store
 *.tmp
 *.temp
-
-git config --global user.email "yvillalobosoviedo@gmail.com"
+node_modules/
+.env
+.env.local
+.env.*.local
