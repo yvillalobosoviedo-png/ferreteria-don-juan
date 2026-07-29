@@ -10,7 +10,6 @@ Sitio web informativo para la ferretería "Don Juan", ubicada en el centro de Si
 - Blog con consejos de construcción
 - Redes sociales integradas (Facebook, Instagram, WhatsApp, YouTube)
 - Optimización SEO
-
 ## Tech Stack
 
 - HTML5
@@ -40,7 +39,6 @@ https://ferreteria-don-juan.vercel.app
 
 - Email: yvillalobosoviedo@gmail.com
 - GitHub: https://github.com/yvillalobosoviedo-png
-
 ## Features
 
 - Diseño responsive - Adaptable a dispositivos móviles
@@ -62,8 +60,6 @@ https://ferreteria-don-juan.vercel.app
 
 ### Tuberías PVC
 ![Tuberías PVC](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/tuberia.webp?raw=true)
-
-
 ## FAQ
 
 **¿El sitio es responsive?**
@@ -132,8 +128,6 @@ FerreteriaDonJuan/
 │ └── pintar.webp
 │
 └── 📁 node_modules/ # Dependencias (ignorado por Git)
-
-
 ## Security & Performance
 
 ### Seguridad
@@ -147,3 +141,54 @@ FerreteriaDonJuan/
 - **Carga diferida (lazy loading)**: Imágenes cargan bajo demanda
 - **CSS optimizado**: Estilos organizados y sin redundancias
 - **Despliegue en CDN**: Vercel distribuye el contenido globalmente
+## Installation
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- Git
+- Visual Studio Code
+- Un navegador web
+- (Opcional) Node.js
+
+## Pasos de instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/yvillalobosoviedo-png/ferreteria-don-juan.git
+   ```
+
+2. Ingresa a la carpeta del proyecto:
+
+   ```bash
+   cd ferreteria-don-juan
+   ```
+
+3. Abre el proyecto en Visual Studio Code:
+
+   ```bash
+   code .
+   ```
+
+4. (Opcional) Configura las variables de entorno:
+
+   - Copia el archivo `.env.example` y renómbralo como `.env`.
+   - Completa los valores necesarios en el archivo `.env`.
+
+5. Ejecuta el proyecto:
+
+   Si es un proyecto estático, simplemente abre el archivo `index.html` en tu navegador.
+
+   > También puedes utilizar la extensión **Live Server** de Visual Studio Code para una mejor experiencia durante el desarrollo.
+## Usage
+
+
+El sitio web permite a los usuarios:
+- Ver el catálogo de productos (bloques, tuberías, pintura, etc.)
+- Consultar ofertas y promociones especiales
+- Leer consejos de construcción en el blog
+- Contactar a la ferretería por WhatsApp o redes sociales
+
+**URL:** https://ferreteria-don-juan.vercel.app
