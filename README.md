@@ -104,30 +104,32 @@ Puedes contactarlos a través de WhatsApp, Facebook, Instagram o por teléfono.
 - Profesor: José Luis Peña Villegas
 - Curso: Desarrollo de Páginas Web
 - Instituto Nacional de Aprendizaje (INA)
+
+
 ## Estructura de carpetas
 
+```text
 FerreteriaDonJuan/
-│
-├── index.html # Página principal
-├── styles.css # Estilos CSS
-├── config.js # Configuración del sitio
-├── .gitignore # Archivos ignorados por Git
-├── .env # Variables de entorno (no subir a GitHub)
-├── .env.example # Plantilla de variables de entorno
-├── robots.txt # Configuración para motores de búsqueda
-├── sitemap.xml # Mapa del sitio para SEO
-├── package.json # Dependencias del proyecto
-├── package-lock.json # Bloqueo de versiones
-│
-├── 📁 img/ # Imágenes del sitio
-│ ├── logo.webp
-│ ├── bloques.webp
-│ ├── tuberia.webp
-│ ├── madera.webp
-│ ├── pared.webp
-│ └── pintar.webp
-│
-└── 📁 node_modules/ # Dependencias (ignorado por Git)
+├── index.html            # Página principal
+├── styles.css            # Estilos CSS
+├── config.js             # Configuración del sitio
+├── .gitignore            # Archivos ignorados por Git
+├── .env                  # Variables de entorno (no subir a GitHub)
+├── .env.example          # Plantilla de variables de entorno
+├── robots.txt            # Configuración para motores de búsqueda
+├── sitemap.xml           # Mapa del sitio para SEO
+├── package.json          # Dependencias del proyecto
+├── package-lock.json     # Versiones de dependencias
+├── img/
+│   ├── logo.webp
+│   ├── bloques.webp
+│   ├── tuberia.webp
+│   ├── madera.webp
+│   ├── pared.webp
+│   └── pintar.webp
+└── node_modules/         # Dependencias (ignorado por Git)
+```
+
 ## Security & Performance
 
 ### Seguridad
