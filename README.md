@@ -110,24 +110,38 @@ Puedes contactarlos a través de WhatsApp, Facebook, Instagram o por teléfono.
 
 ```text
 FerreteriaDonJuan/
-├── index.html            # Página principal
-├── styles.css            # Estilos CSS
-├── config.js             # Configuración del sitio
-├── .gitignore            # Archivos ignorados por Git
-├── .env                  # Variables de entorno (no subir a GitHub)
-├── .env.example          # Plantilla de variables de entorno
-├── robots.txt            # Configuración para motores de búsqueda
-├── sitemap.xml           # Mapa del sitio para SEO
-├── package.json          # Dependencias del proyecto
-├── package-lock.json     # Versiones de dependencias
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Workflow de CI/CD para InfinityFree
+│
+├── css/
+│   └── styles.css              # Estilos CSS
+│
 ├── img/
-│   ├── logo.webp
-│   ├── bloques.webp
-│   ├── tuberia.webp
-│   ├── madera.webp
-│   ├── pared.webp
-│   └── pintar.webp
-└── node_modules/         # Dependencias (ignorado por Git)
+│   ├── bloques.webp            # Productos - Bloques de concreto
+│   ├── logo.webp               # Logo de la ferretería
+│   ├── madera.webp             # Productos - Madera y acabados
+│   ├── pared.webp              # Blog - Instalación de cerámica
+│   ├── pintar.webp             # Blog - Pintura de casas
+│   └── tuberia.webp            # Productos - Tuberías PVC
+│
+├── js/
+│   └── config.js               # Configuración del sitio
+│
+├── node_modules/               # Dependencias (ignorado por Git)
+│
+├── .env                        # Variables de entorno (ignorado por Git)
+├── .env.example                # Plantilla de variables de entorno
+├── .gitignore                  # Archivos ignorados por Git
+├── favicon.ico                 # Icono del sitio
+├── google9dd9d8ea0ae630a5.html # Verificación de Google Search Console
+├── index.html                  # Página principal
+├── package-lock.json           # Bloqueo de versiones de dependencias
+├── package.json                # Dependencias del proyecto
+├── README.md                   # Documentación del proyecto
+├── robots.txt                  # Configuración para motores de búsqueda
+└── sitemap.xml                 # Mapa del sitio para SEO
 ```
 
 ## Security & Performance
