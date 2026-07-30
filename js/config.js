@@ -7,6 +7,7 @@ console.log("DB_URI:", process.env.DB_URI);
 console.log("API_KEY:", process.env.API_KEY);
 */
 // ============================================
+// ============================================
 // ===== HONEYPOT - Validación de formulario =====
 // ============================================
 
@@ -128,26 +129,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // ============================================
+  // ===== BOTÓN VOLVER ARRIBA =====
+  // ============================================
 
-  
-// Botón Volver Arriba
-const btnTop = document.getElementById('btnVolverArriba');
-if (btnTop) {
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-      btnTop.classList.add('visible');
-    } else {
-      btnTop.classList.remove('visible');
-    }
-  });
+  const btnTop = document.getElementById("btnVolverArriba");
+  if (btnTop) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        btnTop.classList.add("visible");
+      } else {
+        btnTop.classList.remove("visible");
+      }
+    });
 
-  btnTop.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-
-});
+    btnTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+}); // ← ✅ CIERRE CORRECTO DEL DOMContentLoaded
 
 // ============================================
 // ===== FUNCIONES PARA CONSOLA =====
@@ -164,4 +164,29 @@ function verMensajes() {
 function limpiarMensajes() {
   localStorage.removeItem("mensajesDonJuan");
   console.log("Mensajes eliminados.");
+}
+
+// Función para mostrar mensajes en la página
+function mostrarMensajes() {
+  const mensajes = JSON.parse(localStorage.getItem("mensajesDonJuan")) || [];
+  const lista = document.getElementById("listaMensajes");
+  
+  if (!lista) return;
+  
+  if (mensajes.length === 0) {
+    lista.innerHTML = "📭 No hay mensajes guardados.";
+    return;
+  }
+  
+  let html = '<ul style="list-style: none; padding: 0;">';
+  mensajes.forEach(function (msg) {
+    html +=
+      '<li style="background: #222; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #f5a623;">';
+    html += "<strong>" + msg.nombre + "</strong> (" + msg.email + ")<br>";
+    html += '<span style="color: #ccc;">' + msg.mensaje + "</span><br>";
+    html += '<small style="color: #888;">' + msg.fecha + "</small>";
+    html += "</li>";
+  });
+  html += "</ul>";
+  lista.innerHTML = html;
 }
