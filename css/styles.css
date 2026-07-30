@@ -553,3 +553,91 @@ img { max-width: 100%; display: block; }
         padding: 7px 16px;
     }
 }
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+.footer-contacto {
+  grid-column: 1 / -1;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-contacto h4 {
+  color: #ffd700;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffd700;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+/* 🪤 CAMPO HONEYPOT - OCULTO PARA HUMANOS */
+.honeypot {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.btn-enviar {
+  background: #ffd700;
+  color: #1a1a2e;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background: #e6c200;
+}
+
+.resultado {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.resultado.exito {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.15);
+}
+
+.resultado.error {
+  color: #f44336;
+  background: rgba(244, 67, 54, 0.15);
+}

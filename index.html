@@ -359,6 +359,7 @@
     </main>
 
     <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer" id="contacto">
       <div class="footer-inner">
         <div class="footer-brand">
@@ -368,6 +369,7 @@
             Costa Rica.
           </p>
         </div>
+
         <div class="footer-info">
           <p>
             <i class="fas fa-store"></i> ¿Buscás una
@@ -380,6 +382,45 @@
             <i class="fas fa-location-dot"></i> 100 m norte de la plaza central,
             Siquirres
           </p>
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO CON HONEYPOT -->
+        <div class="footer-contacto">
+          <h4><i class="fas fa-paper-plane"></i> Escríbenos</h4>
+          <form id="formContacto" class="form-contacto">
+            <div class="form-group">
+              <input type="text" id="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Tu correo" required />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="mensaje"
+                rows="3"
+                placeholder="Tu mensaje"
+                required
+              ></textarea>
+            </div>
+
+            <!-- CAMPO HONEYPOT (trampa para bots) -->
+            <div class="form-group honeypot">
+              <label for="segundo_apellido"
+                >Segundo Apellido (no rellenar)</label
+              >
+              <input
+                type="text"
+                id="segundo_apellido"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <button type="submit" class="btn-enviar">
+              <i class="fas fa-paper-plane"></i> Enviar mensaje
+            </button>
+          </form>
+          <div id="mensajeResultado" class="resultado"></div>
         </div>
 
         <div class="footer-redes">
