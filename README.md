@@ -53,13 +53,13 @@ https://ferreteria-don-juan.vercel.app
 ## Screenshots
 
 ### Página de inicio
-![Página de inicio](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/logo.webp?raw=true)
+![Página de inicio](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/img/logo.webp?raw=true)
 
 ### Catálogo de productos
-![Catálogo de productos](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/bloques.webp?raw=true)
+![Catálogo de productos](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/img/bloques.webp?raw=true)
 
 ### Tuberías PVC
-![Tuberías PVC](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/tuberia.webp?raw=true)
+![Tuberías PVC](https://github.com/yvillalobosoviedo-png/ferreteria-don-juan/blob/main/img/tuberia.webp?raw=true)
 ## FAQ
 
 **¿El sitio es responsive?**
