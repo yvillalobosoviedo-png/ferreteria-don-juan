@@ -353,3 +353,203 @@ img { max-width: 100%; display: block; }
     font-size: 0.85rem;
   }
 }
+
+/* ============================================
+   RESPONSIVE - MEDIA QUERIES
+   ============================================ */
+
+/* ✅ Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .ofertas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ✅ Móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+    /* HEADER */
+    .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    
+    .brand {
+        justify-content: center;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    
+    .main-nav a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    /* HERO */
+    .hero {
+        padding: 50px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-sub {
+        font-size: 0.95rem;
+    }
+    
+    .hero-badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    /* PRODUCTOS */
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 20px 16px;
+    }
+    
+    .card img {
+        height: 150px;
+    }
+    
+    /* OFERTAS */
+    .ofertas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .oferta-card {
+        padding: 20px 16px;
+    }
+    
+    /* BLOG */
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-card img {
+        height: 180px;
+    }
+    
+    /* FOOTER */
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+        padding: 0 16px;
+    }
+    
+    .footer-brand .brand-name {
+        font-size: 1.2rem;
+    }
+    
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-copy {
+        font-size: 0.75rem;
+    }
+
+    /* REDES SOCIALES */
+    .footer-redes {
+        margin: 10px 0;
+    }
+    
+    .redes-sociales {
+        gap: 8px;
+    }
+    
+    .red-social {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+
+    /* SECCIONES GENERALES */
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+    }
+    
+    .section-productos,
+    .section-ofertas,
+    .section-consejos {
+        padding: 40px 0;
+    }
+}
+
+/* ✅ Móviles muy pequeños */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-badges span {
+        font-size: 0.8rem;
+        padding: 5px 14px;
+    }
+    
+    .brand-name {
+        font-size: 1rem;
+    }
+    
+    .brand-logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .main-nav a {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    
+    .card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .oferta-card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .blog-body h3 {
+        font-size: 0.95rem;
+    }
+    
+    .blog-body {
+        padding: 16px 18px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .btn-oferta {
+        font-size: 0.8rem;
+        padding: 7px 16px;
+    }
+}
