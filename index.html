@@ -15,6 +15,7 @@
       gtag("config", "G-EXLNHW2T5N");
     </script>
 
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -38,6 +39,8 @@
     <meta name="copyright" content="© 2026 Ferretería Don Juan" />
     <meta name="revisit-after" content="7 days" />
     <meta name="geo.country" content="CR" />
+    <meta name="theme-color" content="#1A1A1A" />
+    <meta name="mobile-web-app-capable" content="yes" />
 
     <!-- Canónica -->
     <link rel="canonical" href="https://ferreteria-don-juan.ifree.page/" />
@@ -66,6 +69,10 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Ferretería Don Juan - Materiales de construcción en Siquirres"
+    />
     <meta property="og:locale" content="es_CR" />
 
     <!-- Twitter Cards -->
@@ -82,6 +89,10 @@
     <meta
       name="twitter:image"
       content="https://ferreteria-don-juan.ifree.page/img/og-principal.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Ferretería Don Juan - Siquirres, Limón"
     />
 
     <!-- Google Search Console -->
@@ -103,7 +114,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Schema.org JSON-LD (mejorado) -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -149,6 +160,9 @@
   </head>
 
   <body>
+    <!-- BARRA DE PROGRESO DE LECTURA -->
+    <div class="progress-bar" id="progressBar"></div>
+
     <!-- HEADER + NAV -->
     <header class="site-header">
       <div class="header-inner">
@@ -188,7 +202,7 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero" id="inicio">
+      <section class="hero fade-in" id="inicio">
         <div class="hero-inner">
           <p class="hero-eyebrow">
             <i class="fas fa-map-pin"></i> Centro de Siquirres, Limón
@@ -208,7 +222,7 @@
       </section>
 
       <!-- SECCIÓN 1 — PRODUCTOS -->
-      <section class="section-productos" id="productos">
+      <section class="section-productos fade-in" id="productos">
         <div class="container">
           <div class="section-header">
             <span class="section-label"
@@ -280,7 +294,7 @@
       </section>
 
       <!-- SECCIÓN 2 — OFERTAS -->
-      <section class="section-ofertas" id="ofertas">
+      <section class="section-ofertas fade-in" id="ofertas">
         <div class="container">
           <div class="section-header light">
             <span class="section-label"
@@ -328,7 +342,7 @@
       </section>
 
       <!-- SECCIÓN 3 — CONSEJOS / BLOG -->
-      <section class="section-consejos" id="consejos">
+      <section class="section-consejos fade-in" id="consejos">
         <div class="container">
           <div class="section-header">
             <span class="section-label"
@@ -475,7 +489,7 @@
               <i class="fab fa-instagram"></i> Instagram
             </a>
             <a
-              href="https://wa.me/506XXXXXXXX"
+              href="https://wa.me/50688888888"
               class="red-social"
               aria-label="WhatsApp"
             >
@@ -496,5 +510,70 @@
         </p>
       </div>
     </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a
+      href="https://wa.me/50688888888"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/config.js"></script>
+
+    <!-- Botón Volver Arriba -->
+    <button id="btnVolverArriba" class="btn-top" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Panel de Administración (solo visible para ti) -->
+    <div
+      id="adminPanel"
+      style="
+        display: none;
+        max-width: 600px;
+        margin: 20px auto;
+        background: #1a1a2e;
+        padding: 20px;
+        border-radius: 8px;
+        color: #fff;
+      "
+    >
+      <h3 style="color: #f5a623">📊 Mensajes Recibidos</h3>
+      <div
+        id="listaMensajes"
+        style="max-height: 300px; overflow-y: auto; margin: 10px 0"
+      ></div>
+      <button
+        onclick="mostrarMensajes()"
+        style="
+          background: #f5a623;
+          color: #1a1a2e;
+          border: none;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      >
+        Cargar mensajes
+      </button>
+      <button
+        onclick="limpiarMensajes()"
+        style="
+          background: #f44336;
+          color: #fff;
+          border: none;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: 10px;
+        "
+      >
+        Limpiar
+      </button>
+    </div>
   </body>
 </html>
