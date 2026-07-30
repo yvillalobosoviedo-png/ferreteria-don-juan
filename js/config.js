@@ -146,16 +146,6 @@ if (btnTop) {
   });
 }
 
-// Mostrar panel de admin solo si la URL tiene ?admin=1
-const params = new URLSearchParams(window.location.search);
-if (params.get('admin') === '1') {
-  const panel = document.getElementById('adminPanel');
-  if (panel) {
-    panel.style.display = 'block';
-    mostrarMensajes();
-  }
-}
-
 
 });
 
@@ -175,26 +165,3 @@ function limpiarMensajes() {
   localStorage.removeItem("mensajesDonJuan");
   console.log("Mensajes eliminados.");
 }
-
-// Mostrar mensajes en la página
-function mostrarMensajes() {
-  const mensajes = JSON.parse(localStorage.getItem('mensajesDonJuan')) || [];
-  const lista = document.getElementById('listaMensajes');
-  
-  if (mensajes.length === 0) {
-    lista.innerHTML = '📭 No hay mensajes guardados.';
-    return;
-  }
-  
-  let html = '<ul style="list-style: none; padding: 0;">';
-  mensajes.forEach(function(msg) {
-    html += '<li style="background: #222; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #f5a623;">';
-    html += '<strong>' + msg.nombre + '</strong> (' + msg.email + ')<br>';
-    html += '<span style="color: #ccc;">' + msg.mensaje + '</span><br>';
-    html += '<small style="color: #888;">' + msg.fecha + '</small>';
-    html += '</li>';
-  });
-  html += '</ul>';
-  lista.innerHTML = html;
-}
-
